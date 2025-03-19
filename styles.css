@@ -1,41 +1,39 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #009900;
     color: white;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-.field {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
     padding: 20px;
+    text-align: center;
 }
 
-.player-slot {
-    width: 50px;
-    height: 50px;
-    background: white;
-    color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#team {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.player-card {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: #008800;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#adminButton {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.player-slot.selected {
-    background: red;
-    color: white;
-}
-
-.hidden {
-    display: none;
+#adminButton:hover {
+    background-color: #ff3300;
 }
