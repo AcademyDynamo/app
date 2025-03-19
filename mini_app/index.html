@@ -1,53 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Football League</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy Football - My Team</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="app-container">
-        <header class="header">
-            <h1>Fantasy Football League</h1>
-            <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-        </header>
+  <header>
+    <h1>Fantasy Football</h1>
+    <nav>
+      <a href="#my-team">Моя команда</a>
+      <a href="#league">Лига</a>
+      <a href="#mini-games">Мини-игры</a>
+      <a href="#settings">Настройки</a>
+    </nav>
+  </header>
 
-        <main class="content">
-            <section class="league-info">
-                <h2>League Overview</h2>
-                <p>Welcome to the Fantasy Football League! Here you can manage your team and track your progress.</p>
-            </section>
-
-            <section class="team-management">
-                <h2>My Team</h2>
-                <button class="manage-team">Manage Team</button>
-                <div class="team-list">
-                    <!-- Example of player slot with icon -->
-                    <div class="player-slot">
-                        <img src="images/1football-shirt.png" alt="Player 1 Icon" class="player-icon">
-                        <p>Player 1</p>
-                        <button class="add-player">Add</button>
-                    </div>
-                    <div class="player-slot">
-                        <img src="images/1football-shirt.png" alt="Player 2 Icon" class="player-icon">
-                        <p>Player 2</p>
-                        <button class="add-player">Add</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Background image for football field -->
-            <section class="field-image">
-                <img src="images/1football-field.png" alt="Football Field">
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p>&copy; 2025 Fantasy Football</p>
-        </footer>
+  <main id="my-team">
+    <h2>Моя команда</h2>
+    <div id="team-info">
+      <p>Команда: <span id="team-name">FC Example</span></p>
+      <p>Состав: <span id="team-members">Игрок 1, Игрок 2, Игрок 3</span></p>
     </div>
+    <button id="add-player">Добавить игрока</button>
+    <button id="remove-player">Удалить игрока</button>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>© 2025 Fantasy Football League</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
