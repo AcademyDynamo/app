@@ -1,43 +1,33 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
-    color: white;
     text-align: center;
+    background-color: #f5f5f5;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
+#substitutes-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
 }
 
-.field {
-    position: relative;
+#substitutes-container.show {
+    opacity: 1;
+    display: block;
 }
 
-    .field img {
-        width: 100%;
-    }
-
-.players {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 10px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.jersey {
-    background: #fff;
-    border: none;
+li {
+    background: #ddd;
+    margin: 5px;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
-    transition: transform 0.2s ease-in-out;
 }
 
-    .jersey:hover {
-        transform: scale(1.1);
-    }
+li:hover {
+    background: #bbb;
+}
