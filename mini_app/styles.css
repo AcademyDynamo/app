@@ -1,117 +1,39 @@
-/* Basic styling */
-body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f1f1f1;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4CAF50;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.app-container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+header {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
 }
 
-.theme-toggle {
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.theme-toggle:hover {
-    background-color: #45a049;
-}
-
-.content {
-    margin-top: 20px;
-}
-
-h2 {
-    color: #333;
+main {
+  padding: 20px;
 }
 
 button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-.team-list {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.player-slot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.player-icon {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.field-image {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.field-image img {
-    width: 100%;
-    max-width: 900px;
-    border-radius: 10px;
-}
-
-/* Dark mode */
-body.dark-theme {
-    background-color: #121212;
-    color: #f1f1f1;
-}
-
-body.dark-theme .app-container {
-    background-color: #1c1c1c;
-}
-
-body.dark-theme .theme-toggle {
-    background-color: #333;
-}
-
-body.dark-theme button {
-    background-color: #333;
-    color: #f1f1f1;
-}
-
-body.dark-theme button:hover {
-    background-color: #444;
+  background-color: #ddd;
 }
