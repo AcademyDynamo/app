@@ -1,4 +1,4 @@
-const API_URL = "http://<IP_адрес_бота>:8000/get_deadline";  // 🔹 Укажите реальный IP бота
+const API_URL = "postgresql://fantasy_yfl_sib_user:yuPvBqdS7ll2l3TNchVjg4JqgpOylYsF@dpg-cvdaidrv2p9s73cd7rr0-a.frankfurt-postgres.render.com/fantasy_yfl_sib";  // 🔹 Укажите реальный IP бота
 
 const substitutes = ["Игрок 1", "Игрок 2", "Игрок 3", "Игрок 4"]; // 🔹 Список замен
 
