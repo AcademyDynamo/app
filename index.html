@@ -1,39 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy League</title>
+    <title>Fantasy Football</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Фэнтези Лига</h1>
-    </header>
+    <div class="header">
+        <h1>Fantasy Football League</h1>
+        <button id="adminButton">Админ-меню</button>
+    </div>
     
-    <main>
-        <section id="team">
-            <h2>Моя команда</h2>
-            <div class="field">
-                <div class="player-slot" data-position="1">+</div>
-                <div class="player-slot" data-position="2">+</div>
-                <div class="player-slot" data-position="3">+</div>
-                <div class="player-slot" data-position="4">+</div>
-                <div class="player-slot" data-position="5">+</div>
-                <div class="player-slot" data-position="6">+</div>
-                <div class="player-slot" data-position="7">+</div>
-            </div>
-        </section>
-
-        <section id="players-list" class="hidden">
-            <h2>Выберите игрока</h2>
-            <ul>
-                <li data-name="Игрок 1">Игрок 1</li>
-                <li data-name="Игрок 2">Игрок 2</li>
-                <li data-name="Игрок 3">Игрок 3</li>
-            </ul>
-        </section>
-    </main>
+    <div id="team">
+        <h2>Моя команда</h2>
+        <!-- Здесь будет отображаться состав команды -->
+        <div id="players">
+            <div class="player-card" onclick="selectPlayer('Player 1')">Player 1</div>
+            <div class="player-card" onclick="selectPlayer('Player 2')">Player 2</div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
