@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Fantasy League</h1>
-        <div class="field">
-            <img src="static/field.png" alt="Football Field">
-            <div class="players">
-                <button class="jersey" data-position="GK">GK</button>
-                <button class="jersey" data-position="DF">DF</button>
-                <button class="jersey" data-position="MF">MF</button>
-                <button class="jersey" data-position="FW">FW</button>
-            </div>
+    <h1>Fantasy League ⚽</h1>
+    <p id="deadline-text">Дедлайн загружается...</p>
+
+    <div id="team">
+        <button id="edit-team" onclick="toggleSubstitutes()">Редактировать состав</button>
+        <div id="substitutes-container" class="hidden">
+            <p>Выберите игрока для замены:</p>
+            <ul id="substitutes-list"></ul> <!-- 🔹 Список замен -->
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
