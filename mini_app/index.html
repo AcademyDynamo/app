@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fantasy Football - My Team</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy League</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Fantasy Football</h1>
-    <nav>
-      <a href="#my-team">Моя команда</a>
-      <a href="#league">Лига</a>
-      <a href="#mini-games">Мини-игры</a>
-      <a href="#settings">Настройки</a>
-    </nav>
-  </header>
+    <header>
+        <h1>Фэнтези Лига</h1>
+    </header>
+    
+    <main>
+        <section id="team">
+            <h2>Моя команда</h2>
+            <div class="field">
+                <div class="player-slot" data-position="1">+</div>
+                <div class="player-slot" data-position="2">+</div>
+                <div class="player-slot" data-position="3">+</div>
+                <div class="player-slot" data-position="4">+</div>
+                <div class="player-slot" data-position="5">+</div>
+                <div class="player-slot" data-position="6">+</div>
+                <div class="player-slot" data-position="7">+</div>
+            </div>
+        </section>
 
-  <main id="my-team">
-    <h2>Моя команда</h2>
-    <div id="team-info">
-      <p>Команда: <span id="team-name">FC Example</span></p>
-      <p>Состав: <span id="team-members">Игрок 1, Игрок 2, Игрок 3</span></p>
-    </div>
-    <button id="add-player">Добавить игрока</button>
-    <button id="remove-player">Удалить игрока</button>
-  </main>
+        <section id="players-list" class="hidden">
+            <h2>Выберите игрока</h2>
+            <ul>
+                <li data-name="Игрок 1">Игрок 1</li>
+                <li data-name="Игрок 2">Игрок 2</li>
+                <li data-name="Игрок 3">Игрок 3</li>
+            </ul>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2025 Fantasy Football League</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
