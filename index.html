@@ -1,26 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Football</title>
+    <title>Fantasy League</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Fantasy Football League</h1>
-        <button id="adminButton">Админ-меню</button>
+    <div class="container">
+        <h1>Моя команда</h1>
+        <div id="team"></div>
+        <button id="saveTeam">Сохранить состав</button>
     </div>
-    
-    <div id="team">
-        <h2>Моя команда</h2>
-        <!-- Здесь будет отображаться состав команды -->
-        <div id="players">
-            <div class="player-card" onclick="selectPlayer('Player 1')">Player 1</div>
-            <div class="player-card" onclick="selectPlayer('Player 2')">Player 2</div>
-        </div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
