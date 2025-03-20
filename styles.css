@@ -1,39 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.header {
-    background-color: #009900;
+    background-color: #2c3e50;
     color: white;
-    padding: 20px;
     text-align: center;
 }
-
-#team {
-    margin-top: 20px;
-    text-align: center;
+.container {
+    width: 80%;
+    margin: auto;
 }
-
-.player-card {
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-    background-color: #008800;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#adminButton {
-    background-color: #ff6600;
-    color: white;
-    padding: 10px 20px;
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #27ae60;
     border: none;
-    border-radius: 5px;
+    color: white;
     cursor: pointer;
 }
-
-#adminButton:hover {
-    background-color: #ff3300;
+button:hover {
+    background-color: #2ecc71;
 }
